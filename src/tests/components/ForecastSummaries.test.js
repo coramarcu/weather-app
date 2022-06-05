@@ -32,7 +32,7 @@ describe("ForecastSummaries", () => {
 
   it("renders expected number of <ForecastSummary /> instances", () => {
     const { getAllByTestId } = render(
-      <ForecastSummary forecasts={validProps} />
+      <ForecastSummaries forecasts={validProps} />
     );
 
     expect(getAllByTestId("forecast-summary")).toHaveLength(2);
